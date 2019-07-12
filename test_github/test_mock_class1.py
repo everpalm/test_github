@@ -6,7 +6,7 @@ class ExampleTest(unittest.TestCase):
     def test_func1(self):
         self.assertEqual(example_class.Example(0).func1(), 0)
         self.assertEqual(example_class.Example(1).func1(), 1)
-        self.assertEqual(example_class.Example(-1).func1(), 0)
+        self.assertNotEqual(example_class.Example(-1).func1(), 0)
 
     @mock.patch('example_class.Example.func1')
     def test_func2(self, mock_func1):

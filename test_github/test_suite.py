@@ -8,6 +8,7 @@ if __name__ == '__main__':
     
     suite.addTest(ExampleTest('test_func1'))
     suite.addTest(ExampleTest('test_func2'))
+    suite.addTest(ExampleTest('test_func3'))
 
-    runner = unittest.TextTestRunner(verbosity=2)
+    runner = unittest.TextTestRunner(verbosity=3)
     runner.run(suite)
